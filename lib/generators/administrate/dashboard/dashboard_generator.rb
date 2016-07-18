@@ -77,11 +77,12 @@ module Administrate
         end
       end
 
+      # Updated per hwhelchel's comment in https://github.com/thoughtbot/administrate/issues/623
       def column_type_for_attribute(attr)
         if enum_column?(attr)
           :enum
         else
-          klass.column_types[attr].type
+          klass.columns.find {|c| c.name == attr }.try!(:type) # This line changed
         end
       end
 
