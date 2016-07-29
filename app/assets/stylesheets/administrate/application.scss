@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 @import "normalize-rails";
-@import "bourbon";
-@import "neat";
+@import "bourbon/bourbon";
+@import "neat/neat";
 
 @import "selectize";
 @import "datetime_picker";
