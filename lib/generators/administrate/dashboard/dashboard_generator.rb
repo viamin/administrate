@@ -89,13 +89,17 @@ module Administrate
         if enum_column?(attr)
           :enum
         else
-          klass.columns.find {|c| c.name == attr }.try!(:type) # This line changed
+          column_types(attr)
         end
       end
 
       def enum_column?(attr)
         klass.respond_to?(:defined_enums) &&
           klass.defined_enums.keys.include?(attr)
+      end
+
+      def column_types(attr)
+        klass.columns.find { |column| column.name == attr }.try(:type)
       end
 
       def association_type(attribute)

@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gemspec
 
 gem "administrate-field-image",
-  git: "https://github.com/teoljungberg/administrate-field-image.git",
+  git: "https://github.com/thoughtbot/administrate-field-image.git",
   branch: "rails-5"
 gem "bourbon"
 gem "delayed_job_active_record"

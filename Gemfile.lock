@@ -1,18 +1,18 @@
 GIT
-  remote: https://github.com/teoljungberg/administrate-field-image.git
-  revision: 81abcb6ae8d277e310771d8835d5e679bbea3599
+  remote: https://github.com/thoughtbot/administrate-field-image.git
+  revision: f07523253a5629048c7b395571207b619b32c862
   branch: rails-5
   specs:
     administrate-field-image (0.0.2)
       administrate (>= 0.2.0.rc1, < 0.3.0)
-      rails (>= 4.2)
+      rails (>= 4.2, < 5.1)
 
 PATH
   remote: .
   specs:
     administrate (0.2.2)
       autoprefixer-rails (~> 6.0)
-      bourbon (~> 4.2)
+      bourbon (> 4.2)
       datetime_picker_rails (~> 0.0.7)
       jquery-rails (~> 4.0)
       kaminari (~> 0.16)
@@ -74,7 +74,7 @@ GEM
       thor (>= 0.14.0)
     arel (7.1.1)
     ast (2.3.0)
-    autoprefixer-rails (6.3.7)
+    autoprefixer-rails (6.4.0)
       execjs
     awesome_print (1.7.0)
     bourbon (4.2.7)

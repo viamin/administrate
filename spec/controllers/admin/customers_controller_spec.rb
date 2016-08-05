@@ -163,7 +163,7 @@ describe Admin::CustomersController, type: :controller do
       customer = create(:customer)
 
       expect do
-        delete :destroy, kwarg_params(id: customer.to_param)
+        delete :destroy, id: customer.to_param
       end.to change(Customer, :count).by(-1)
     end
 
