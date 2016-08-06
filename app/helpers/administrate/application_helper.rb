@@ -21,7 +21,7 @@ module Administrate
         )
     end
 
-    def resource_active_route_key(resource_name)
+    def resource_index_route_key(resource_name)
       ActiveModel::Naming.route_key(class_from_resource(resource_name))
     end
 
