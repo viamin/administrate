@@ -37,7 +37,7 @@ module Administrate
       end
 
       def resources
-        data.limit(limit)
+        data.try(:limit, limit)
       end
 
       def more_than_limit?
