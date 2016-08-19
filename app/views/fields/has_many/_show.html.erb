@@ -18,7 +18,7 @@ from the associated resource class's dashboard.
 [1]: http://www.rubydoc.info/gems/administrate/Administrate/Field/HasMany
 %>
 
-<% if field.resources.any? %>
+<% if field.try(:resources).try(:any?) %>
   <%= render(
     "collection",
     collection_presenter: field.associated_collection,
