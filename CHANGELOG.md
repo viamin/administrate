@@ -18,6 +18,13 @@
 
 ### Upcoming Release
 
+* [#704] [I18n] Fix word on pt-BR translation
+
+### 0.3.0 (Oct 28, 2016)
+
+* [#127] [UI] Add button to clear the search
+* [#656] [COMPAT] Add Rails 5 support
+
 ### 0.2.2 (May 21, 2016)
 
 * [#560] [BUGFIX] Fix LoadError for apps that don't use images

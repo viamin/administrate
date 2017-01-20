@@ -44,5 +44,9 @@ module Administrate
     def sanitized_order_params
       params.permit(:search, :id, :order, :page, :per_page, :direction)
     end
+
+    def clear_search_params
+      params.except(:search, :page).permit(:order, :direction, :per_page)
+    end
   end
 end
